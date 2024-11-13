@@ -1,0 +1,212 @@
+/* Reset margin and padding for all elements, and set box-sizing to border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+/* Set background image for the body and make it cover the entire area */
+body {
+  background-image: url("backgroundimg.jpg");
+  background-size: cover; /* Scale the background image to cover the entire viewport */
+}
+
+/* Styling for the heading area */
+.heading-area {
+  display: flex; /* Use flexbox for layout */
+  backdrop-filter: blur(20px); /* Apply a blur effect to the background */
+  width: 90vw; /* Set width to 90% of the viewport width */
+  margin-left: 5vw; /* Center the heading area with left margin */
+  margin-top: 3vh; /* Add top margin for spacing */
+  border-radius: 2rem; /* Rounded corners */
+  box-shadow: 0 0 9px 9px rgba(255, 255, 255, 0.5); /* Soft white shadow */
+}
+
+/* Main heading styles */
+.heading {
+  margin-top: 1vh; /* Add top margin */
+  display: inline-block; /* Make it an inline-block element */
+  text-align: center; /* Center text */
+  font-size: 2.5rem; /* Set font size */
+  width: 80vw; /* Set width to 80% of viewport width */
+  color: rgb(205, 86, 32); /* White text color */
+  font-family: "Rubik Mono One", monospace; /* Custom font family */
+  font-weight: 100; /* Light font weight */
+  font-style: normal; /* Normal font style */
+}
+
+/* Styles for the source code area */
+.source {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  font-size: 1.5rem; /* Set font size */
+  width: 20vw; /* Set width to 20% of viewport width */
+  color: white; /* White text color */
+  font-weight: 900; /* Bold font weight */
+  gap: 0.5vw; /* Space between elements */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+.source a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Form section styles */
+.form-section {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  gap: 3rem; /* Space between elements */
+  margin-top: 5vh; /* Add top margin for spacing */
+}
+
+/* Styling for the form container */
+.form-elements {
+  backdrop-filter: blur(20px); /* Apply a blur effect to the background */
+  width: 40vw; /* Set width to 40% of viewport width */
+  height: 75vh; /* Set height to 75% of viewport height */
+  border-radius: 2rem; /* Rounded corners */
+  border: 2px solid white; /* White border */
+}
+
+/* Styles for input labels and sections */
+.name,
+.id,
+.contact,
+.email {
+  text-align: center; /* Center text */
+  color: black; /* Black text color */
+  font-size: 2rem; /* Set font size */
+  margin-top: 5vh; /* Add top margin for spacing */
+  font-weight: 900; /* Bold font weight */
+}
+
+/* Styles for input fields */
+.name input,
+.id input,
+.contact input,
+.email input {
+  margin-left: 1vw; /* Left margin for spacing */
+  width: 30vw; /* Set width to 30% of viewport width */
+  padding: 0.5rem; /* Padding inside the input */
+  border-radius: 1.5rem; /* Rounded corners */
+  font-size: 1.1rem; /* Set font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for the add button section */
+.add-button {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  margin-top: 3vh; /* Add top margin for spacing */
+}
+
+/* Styles for the submit button */
+.add-button button {
+  width: 7vw; /* Set width to 7% of viewport width */
+  height: 4vh; /* Set height to 4% of viewport height */
+  font-size: 1.3rem; /* Set font size */
+  border-radius: 2rem; /* Rounded corners */
+  background-color: rgb(43, 99, 202); /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+
+  &:hover {
+    /* Styles for hover state */
+    color: black; 
+    background-color: tomato; /* Change background color to tomato */
+    box-shadow: 0 0 4px 4px white; /* Add shadow on hover */
+  }
+}
+
+/* Styles for the display section */
+.display-section {
+  backdrop-filter: blur(20px); 
+  width: 40vw; 
+  height: 75vh; 
+  border-radius: 2rem; /* Rounded corners */
+  border: 2px solid white; /* White border */
+  overflow: auto; /* Enable scrolling if content overflows */
+  display: none;
+}
+
+/* Styles for the display heading section */
+.display-heading {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center content vertically */
+  margin-top: 1vh; /* Add top margin for spacing */
+  background-color: black; /* Black background */
+  border-radius: 2rem; /* Rounded corners */
+  height: 5vh; /* Set height */
+  width: 38vw; /* Set width to 38% of viewport width */
+  padding: 0.5rem; /* Padding inside the heading */
+  margin-left: 1vw; /* Left margin for spacing */
+}
+
+/* Styles for paragraphs in the display heading */
+.display-heading p {
+  color: white; /* White text color */
+  font-size: 1.4rem; /* Set font size */
+  margin-left: 1.6vw; /* Left margin for spacing */
+  font-weight: 900; /* Bold font weight */
+}
+
+/* Styles for the fourth paragraph in the information section (animated) */
+.information-section p:nth-child(4) {
+  font-weight: 900; 
+  animation: shine 1s ease-in-out infinite; 
+}
+
+/* Keyframes for shine animation */
+@keyframes shine {
+  0% {
+    color: rgb(43, 43, 228); /* Start color */
+  }
+  100% {
+    color: rgb(104, 215, 68); /* End color */
+  }
+}
+
+/* Styles for icons in the display heading */
+.display-heading i {
+  margin-left: 2.8vw; /* Left margin for spacing */
+}
+
+/* Styles for the information section */
+.information-section {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center content vertically */
+  margin-top: 2vh; /* Add top margin for spacing */
+  border: 1px solid white; /* White border */
+  width: 39vw; /* Set width to 39% of viewport width */
+  padding: 0.5rem; /* Padding inside the section */
+  border-radius: 1.5rem; /* Rounded corners */
+  margin-left: 0.4vw; /* Left margin for spacing */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for paragraphs in the information section */
+.information-section p {
+  font-size: 1rem; /* Set font size */
+  margin-left: 2vw; /* Left margin for spacing */
+}
+
+/* Styles for reset and delete buttons */
+#reset,
+#delete {
+  margin-left: 2vw; /* Left margin for spacing */
+  background-color: tomato; /* Tomato background color */
+  color: white; /* White text color */
+  border-radius: 0.3rem; /* Rounded corners */
+  padding: 0.2rem; /* Padding inside the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+
+  &:hover {
+    /* Styles for hover state */
+    color: white; /* Keep text color white */
+    background-color: rgb(43, 99, 202); /* Change background color to blue */
+    box-shadow: 0 0 4px 4px white; /* Add shadow on hover */
+  }
+}

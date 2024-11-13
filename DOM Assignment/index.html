@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Enrollment Portal</title>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="Portal_icon.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Preconnect to Google Fonts for improved loading times -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link to Google Font "Rubik Mono One" -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <!-- Header section for the application -->
+    <div class="heading-area">
+      <span class="heading">Student Enrollment Portal</span>
+      <span class="source">
+        <i class="fa-solid fa-folder-open"></i
+        ><!-- Icon for source code -->
+        <a
+          href=
+          target="_blank"
+          >Code</a
+        >
+        <!-- Text label for source code -->
+      </span>
+    </div>
+
+    <!-- Form Section for inputting student data -->
+    <div class="form-section">
+      <div class="form-elements">
+        <!-- Input for Student Name -->
+        <div class="name">
+          <div>Student Name</div>
+          <input
+            type="text"
+            id="input-name"
+            placeholder="Enter Student Name "
+          />
+        </div>
+        <!-- Input for Student ID -->
+        <div class="id">
+          <div>Student Id</div>
+          <input type="text" id="input-id" placeholder="Enter Student ID" />
+        </div>
+        <!-- Input for Contact Number -->
+        <div class="contact">
+          <div>Contact</div>
+          <input
+            type="text"
+            name=""
+            minlength="10"
+            id="input-contact"
+            placeholder="Enter Student's Contact Number"
+          />
+        </div>
+        <!-- Input for Email -->
+        <div class="email">
+          <div>Email</div>
+          <input
+            type="email"
+            name=""
+            id="input-email"
+            required="@"
+            placeholder="Enter Student's Email"
+          />
+        </div>
+        <!-- Button to submit the form -->
+        <div class="add-button">
+          <button id="submit">Add</button>
+        </div>
+      </div>
+
+      <!--Display Section-->
+      <div class="display-section">
+        <div class="display-heading">
+          <p>Name</p>
+          <p>Id</p>
+          <p>Contact</p>
+          <p>Email</p>
+          <p><i class="fa-solid fa-arrows-rotate"></i></p>
+          
+          <p><i class="fa-solid fa-trash-can"></i></p>
+          <!-- Icon for delete functionality -->
+        </div>
+      </div>
+    </div>
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>
